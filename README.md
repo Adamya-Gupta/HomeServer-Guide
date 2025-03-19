@@ -54,7 +54,7 @@ Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 => Gives a good dashboard to manage your server.<br>
 => Provides apps in form of docker container. 
 
-- Setup casaos by simply typing this command:
+- Setup CasaOS by simply typing this command:
 
 ```
 curl -fsSL https://get.casaos.io | sudo bash
@@ -68,7 +68,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <img src="Screenshots/CasaL.png"/></td><td>
 <img src="Screenshots/CasaD.png"/></td></tr></table></div>
 
-### Step5: File Sharing
+### Step5: File Sharing through CasaOS
 => CasaOS made samba protocol very simple just one click 
 - select the folder which you want to share and click share
 - Copy the path and paste it in windows file explorer 
@@ -76,7 +76,46 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <div align="center"><table><tr>CasaOS</tr><tr><td>
 <img src="Screenshots/CasaShare.png"/></td><td>
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
- 
+
+- accessing shared folder 
+
+### Step6: Media Server
+=> Creating media server will give you freedom to stream your media on any device and anywhere.
+
+=> We will integrate [Jellyfin](https://jellyfin.org/) 
+- It automatically identifies the movie/series and provide metadata,ratings ,etc.
+
+=> Open CasaOS Dashboard and install jellyfin through AppStore
+
+- Enter the below given address to access jellyfin server <br>
+  `http://localhost:8096`
+
+<div align="center"><table><tr>Jellyfin App on Android</tr><tr><td>
+<img src="Screenshots/JF_Connect.jpeg"/></td><td>
+<img src="Screenshots/JF_MD.jpeg"></td></tr></table></div>
+
+<div align="center">Jellyfin on web browser</div>
+<img src="Screenshots/JF_D.png">
+
+--- 
+
+=> CLI Method : Directly installing jellyfin on Ubuntu Server through terminal
+
+### Step7: Remotly accesing server from anywhere in the world 
+- One of the most simplest way to achieve this is by integrating [Tailscale](https://tailscale.com/)
+
+> [!CAUTION]
+> Do not use CasaOS for installing tailscale use terminal instead
+
+<br>
+
+command for installing tailscale on client side:
+```shell
+curl -fsSL https://tailscale.com/install.sh | sh
+```
+
+Reference Video:[HERE](https://youtu.be/sPdvyR7bLqI)
+
 
 ---
 
