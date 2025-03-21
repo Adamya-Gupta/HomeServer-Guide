@@ -20,18 +20,25 @@ This is a guide for those individuls who want to convert their old PC into a Hom
 Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 ### Step2: DHCP IP Binding / Static IP
-
+> [!IMPORTANT]
+> This will ensure that your server always gets the same IP address which you assigned during installation , otherwise DHCP will automatically assign different IP everytime and you to reroute everything to a new IP address everytime.
 
 > [!TIP]
 > Every router has little different admin settings so names can be like IP Reserve , Static IP , etc.  
 - Open your routers Setting 
 - by entering default gateway ip adderess in a browser 
 - to check your routers ip address enter this command in terminal 
-- for windows 
-- ipconfig 
-- for linux 
-- ifconfig 
-  
+- for Windows 
+   ```Shell 
+   ipconfig 
+   ``` 
+- for linux
+  ```Shell
+  ifconfig
+  ``` 
+
+<img src="Screenshots/IP_Bind.png">
+
 ### Step3: Configuring SSH
 
 => A network protocol that allows users to securely access and manage remote computers.
@@ -61,7 +68,7 @@ curl -fsSL https://get.casaos.io | sudo bash
 ```
 Reference Github: https://github.com/IceWhaleTech/CasaOS
 
-=> After Setup , Enter the server IP in any browser to access the CasaOs dashboard
+=> After Setup , Enter the server IP in any browser to access the CasaOS dashboard
 
 
 <div align="center"><table><tr>CasaOS</tr><tr><td>
@@ -77,7 +84,9 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <img src="Screenshots/CasaShare.png"/></td><td>
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
 
-- accessing shared folder 
+- accessing shared folder on client side
+  
+ <img src="Screenshots/Store_Access.png"> 
 
 ### Step6: Media Server
 => Creating media server will give you freedom to stream your media on any device and anywhere.
@@ -109,13 +118,33 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 <br>
 
-command for installing tailscale on client side:
+- Commands for installing tailscale on Ubuntu Server:
+
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
+- Connect your machine to your Tailscale network
 
-Reference Video:[HERE](https://youtu.be/sPdvyR7bLqI)
+```shell
+sudo tailscale up
+```
+- You can find your Tailscale IPv4 address by running
+  
+  ```shell
+  tailscale ip -4
+  ```
+>[!TIP]  
+>If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
 
+Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
+
+<div align="center"><table>
+<tr>Tailscail Dashboard</tr>
+<tr>
+<td><img alt="TailscaleD" src="Screenshots/TailscaleMD.jpeg"></td>
+<td><img alt="TailscaleD" src="Screenshots/TailscaleD.png"></td>
+</tr>
+</table></div>
 
 ---
 
@@ -141,4 +170,3 @@ git pull origin master
 ./install.sh -r
 ```
 <!-- comment -->
-<img alt="TailscaleD" src="Screenshots/TailscaleD.png">
