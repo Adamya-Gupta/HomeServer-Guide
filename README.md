@@ -36,6 +36,19 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
   ```Shell
   ifconfig
   ``` 
+<div align="center"><table><tr>To check your routers ip address enter this command in terminal</tr><tr><td>
+for Windows
+
+   ```Shell 
+   ipconfig 
+   ``` 
+   </td><td>
+for Linux
+
+  ```Shell
+  ifconfig
+  ``` 
+  </td></tr></table></div>
 
 <img src="Screenshots/IP_Bind.png">
 
@@ -43,16 +56,52 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 => A network protocol that allows users to securely access and manage remote computers.
 
-- Install OpenSSH by following command 
+- Install OpenSSH on Ubuntu Server by following command 
+
 ```Shell
-sudo apt install openssh
+sudo apt install openssh-server
 ```
-- Remotely Access Terminal from another device by entering 
+
+- Check ssh status 
+```Shell
+sudo systemctl status sshd
+```
+>[!TIP]
+>If above command doesn't work try:
+>```Shell
+>sudo systemctl status ssh
+>```
+
+- Start ssh service
+ 
+```Shell
+sudo systemctl start sshd
+```
+- Make sure to start this service at boot automatically
+
+```Shell
+sudo systemctl enable sshd
+```  
+- Check username of ubuntu server
+
+```Shell
+whoami
+```
+- Check server IP by following command 
+
+```Shell
+hostname -I
+```
+--- 
+
+=> Now Remotely Access Terminal from client device by entering 
 
 ```sudo ssh device_name@device_ipaddress``` <br>
 
 Eg:
 `sudo ssh adserver@192.168.1.9`
+
+
 
 Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
   
@@ -123,16 +172,18 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
-- Connect your machine to your Tailscale network
+- Connect your server to your Tailscale network by typing:
 
 ```shell
 sudo tailscale up
 ```
+
 - You can find your Tailscale IPv4 address by running
   
-  ```shell
-  tailscale ip -4
-  ```
+```shell
+tailscale ip -4
+```
+
 >[!TIP]  
 >If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
 
