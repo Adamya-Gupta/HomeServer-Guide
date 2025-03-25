@@ -9,13 +9,14 @@ This is a guide for those individuls who want to convert their old PC into a Hom
 ## Requirements
 1. Old PC or any pc you want to convert into a server
 2. Pendrive >= 16GB
-3. Wifi Router
+3. Wifi Router with Internet connection
 
 ## Setup 
 ### Step1: Setting up UBUNTU SERVER OS
-1. Download Ubuntu server ISO 
-2. Make bootable pendrive with Rufus
-3. Boot from the pendrive and start setting up the ubuntu server on your system  
+1. Download Ubuntu server ISO (LTS version)  from:
+   https://ubuntu.com/download/server
+2. Make bootable pendrive using [Rufus](https://rufus.ie/en/)
+3. Boot your server(Old PC) from the pendrive and start setting up the ubuntu server on your system  
 
 Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
@@ -101,6 +102,15 @@ hostname -I
 Eg:
 `sudo ssh adserver@192.168.1.9`
 
+- Then update and upgrade the system by 
+  
+  ```Shell
+  sudo apt update
+  ```
+  
+  ```Shell
+  sudo apt upgrade
+  ```
 
 
 Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
@@ -148,16 +158,33 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 - Enter the below given address to access jellyfin server <br>
   `http://localhost:8096`
 
-<div align="center"><table><tr>Jellyfin App on Android</tr><tr><td>
+<div align="center">Jellyfin on web browser</div>
+<img src="Screenshots/JF_D.png">
+
+
+<div align="center"><table><tr>Jellyfin App on Android</tr>
+<tr><td>
 <img src="Screenshots/JF_Connect.jpeg"/></td><td>
 <img src="Screenshots/JF_MD.jpeg"></td></tr></table></div>
 
-<div align="center">Jellyfin on web browser</div>
-<img src="Screenshots/JF_D.png">
 
 --- 
 
 => CLI Method : Directly installing jellyfin on Ubuntu Server through terminal
+
+- Directories/Folders Structure example for jellyfin
+  
+```
+Media
+├── Movies
+└── Series
+    ├── Series_name1
+    |    ├── Season1
+    |    └── Season2
+    └── Another_Series2
+```
+
+
 
 ### Step7: Remotly accesing server from anywhere in the world 
 - One of the most simplest way to achieve this is by integrating [Tailscale](https://tailscale.com/)
@@ -196,6 +223,19 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 <td><img alt="TailscaleD" src="Screenshots/TailscaleD.png"></td>
 </tr>
 </table></div>
+
+### Step8: Setting up Immich
+
+
+### Step9: Post installation steps/ Further scope of advancement
+- AI Server
+- Ebook Server: Using calibre
+- Automatic torrent Downloads using : Prowlrr Sonarr Radarr etc
+  https://zerodya.net/self-host-jellyfin-media-streaming-stack/
+<img src="Screenshots/mediastack-1.png">
+
+- Nextcloud for home automation
+
 
 ---
 
