@@ -6,6 +6,8 @@ This is a guide for those individuls who want to convert their old PC into a Hom
   
 - I want to help people save time and give them a step by step guide.
 
+- testing 
+
 ## Requirements
 1. Old PC or any pc you want to convert into a server
 2. Pendrive >= 16GB
