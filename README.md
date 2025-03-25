@@ -6,7 +6,6 @@ This is a guide for those individuls who want to convert their old PC into a Hom
   
 - I want to help people save time and give them a step by step guide.
 
-- testing 
 
 ## Requirements
 1. Old PC or any pc you want to convert into a server
@@ -32,14 +31,16 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 - by entering default gateway ip adderess in a browser 
 - to check your routers ip address enter this command in terminal 
 - for Windows 
+  
    ```Shell 
    ipconfig 
    ``` 
 - for linux
+  
   ```Shell
   ifconfig
   ``` 
-<div align="center"><table><tr>To check your routers ip address enter this command in terminal</tr><tr><td>
+<!-- <div align="center"><table><tr>To check your routers ip address enter this command in terminal</tr><tr><td>
 for Windows
 
    ```Shell 
@@ -51,7 +52,7 @@ for Linux
   ```Shell
   ifconfig
   ``` 
-  </td></tr></table></div>
+  </td></tr></table></div> -->
 
 <img src="Screenshots/IP_Bind.png">
 
@@ -180,10 +181,10 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 Media
 ├── Movies
 └── Series
-    ├── Series_name1
+    ├── Series1_Folder
     |    ├── Season1
     |    └── Season2
-    └── Another_Series2
+    └── Another_Series2_Folder
 ```
 
 
@@ -227,7 +228,10 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 </table></div>
 
 ### Step8: Setting up Immich
+- Best alternative to google photos.
+- Easily back up, organize, and manage your photos on your own server.
 
+<img src="Screenshots/imch.png">
 
 ### Step9: Post installation steps/ Further scope of advancement
 - AI Server
