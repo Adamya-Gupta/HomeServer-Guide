@@ -60,13 +60,13 @@ for Linux
 
 => A network protocol that allows users to securely access and manage remote computers.
 
-- Install OpenSSH on Ubuntu Server by following command 
+1. Install OpenSSH on Ubuntu Server by following command 
 
 ```Shell
 sudo apt install openssh-server
 ```
 
-- Check ssh status 
+2. Check ssh status 
 ```Shell
 sudo systemctl status sshd
 ```
@@ -76,22 +76,22 @@ sudo systemctl status sshd
 >sudo systemctl status ssh
 >```
 
-- Start ssh service
+3. Start ssh service
  
 ```Shell
 sudo systemctl start sshd
 ```
-- Make sure to start this service at boot automatically
+4. Make sure to start this service at boot automatically
 
 ```Shell
 sudo systemctl enable sshd
 ```  
-- Check username of ubuntu server
+4. Check username of ubuntu server
 
 ```Shell
 whoami
 ```
-- Check server IP by following command 
+5. Check server IP by following command 
 
 ```Shell
 hostname -I
@@ -105,7 +105,7 @@ hostname -I
 Eg:
 `sudo ssh adserver@192.168.1.9`
 
-- Then update and upgrade the system by 
+- Then update and upgrade the system by followinf commands:
   
   ```Shell
   sudo apt update
@@ -142,7 +142,8 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 1. Click the files icon on CasaOS Dashboard
 2. Then select the folder which you want to share and click share
 3. Copy the path and paste it in windows file explorer 
-4. Then enter the same credentials which you set while configuring ubuntu server OS
+4. Check connect using different credentials
+5. Then enter the same credentials which you set while configuring ubuntu server OS
 
 <div align="center"><table><tr>CasaOS Files</tr><tr><td>
 <img src="Screenshots/CasaShare.png"/></td><td>
@@ -263,8 +264,8 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 ><img src="Screenshots/strg_engn.png">
 
 ### Step9: Post installation steps/ Further scope of advancement
-- AI Server: Can setup OpenWebUI with Ollama LLM models to have your own chatbot running on your own server.
-- Ebook Server: Using Calibre (Open Source alternative to kindle)
+- AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
+- Ebook Server: Using [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
 - Automatic torrent Downloads using Prowlrr Sonarr Radarr etc: <br>
   https://zerodya.net/self-host-jellyfin-media-streaming-stack/
 <img src="Screenshots/trnt_rf.png">
