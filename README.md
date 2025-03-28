@@ -147,6 +147,14 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
 
 - accessing shared folder on client side
+
+<div align="center"><table>
+<tr>Accessing in windows</tr>
+<tr>
+<td><img src="Screenshots/map_d.png"></td>
+<td><img src="Screenshots/cred_PD.png"></td> 
+</tr>
+</table></div>
   
  <img src="Screenshots/Store_Access.png"> 
 
@@ -227,20 +235,26 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 </tr>
 </table></div>
 
-### Step8: Setting up Immich
+### Step8: Setting up [Immich](https://immich.app/)
 - Best alternative to google photos.
 - Easily back up, organize, and manage your photos on your own server.
 
 <img src="Screenshots/imch.png">
 
+<br>
+
+>[!TIP]
+>Turn on STORAGE TEMPLATE ENGINE from settings, If you want your photos should be organised in proper folder instead of some random order of encryption.
+><img src="Screenshots/strg_engn.png">
+
 ### Step9: Post installation steps/ Further scope of advancement
-- AI Server
-- Ebook Server: Using calibre
+- AI Server: Can setup OpenWebUI with Ollama LLM models to have your own chatbot running on your own server.
+- Ebook Server: Using Calibre (Open Source alternative to kindle)
 - Automatic torrent Downloads using : Prowlrr Sonarr Radarr etc
   https://zerodya.net/self-host-jellyfin-media-streaming-stack/
 <img src="Screenshots/mediastack-1.png">
 
-- Nextcloud for home automation
+- Home automation : Using [NEXTCLOUD](https://nextcloud.com)
 
 
 ---
