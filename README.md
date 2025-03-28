@@ -100,7 +100,7 @@ hostname -I
 
 => Now Remotely Access Terminal from client device by entering 
 
-```sudo ssh device_name@device_ipaddress``` <br>
+```sudo ssh username@device_ipaddress``` <br>
 
 Eg:
 `sudo ssh adserver@192.168.1.9`
@@ -138,25 +138,34 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <img src="Screenshots/CasaD.png"/></td></tr></table></div>
 
 ### Step5: File Sharing through CasaOS
-=> CasaOS made samba protocol very simple just one click 
-- select the folder which you want to share and click share
-- Copy the path and paste it in windows file explorer 
+- CasaOS made samba protocol very simple just one click 
+1. Click the files icon on CasaOS Dashboard
+2. Then select the folder which you want to share and click share
+3. Copy the path and paste it in windows file explorer 
+4. Then enter the same credentials which you set while configuring ubuntu server OS
 
-<div align="center"><table><tr>CasaOS</tr><tr><td>
+<div align="center"><table><tr>CasaOS Files</tr><tr><td>
 <img src="Screenshots/CasaShare.png"/></td><td>
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
 
-- accessing shared folder on client side
+
+<div align="center"><table>
+<tr>Accessing in Windows</tr>
+<tr>
+<td><img src="Screenshots/Access_D.png"></td>
+<td><img src="Screenshots/map_d.png"></td>
+</tr>
+</table></div>
+
 
 <div align="center"><table>
 <tr>Accessing in windows</tr>
 <tr>
-<td><img src="Screenshots/map_d.png"></td>
 <td><img src="Screenshots/cred_PD.png"></td> 
+<td><img src="Screenshots/Store_Access.png"></td> 
 </tr>
 </table></div>
-  
- <img src="Screenshots/Store_Access.png"> 
+
 
 ### Step6: Media Server
 => Creating media server will give you freedom to stream your media on any device and anywhere.
@@ -194,11 +203,11 @@ Media
     |    └── Season2
     └── Another_Series2_Folder
 ```
-
+<img src="Screenshots/Lin_JF.png">
 
 
 ### Step7: Remotly accesing server from anywhere in the world 
-- One of the most simplest way to achieve this is by integrating [Tailscale](https://tailscale.com/)
+- One of the most simplest way to achieve this is by integrating [TAILSCALE](https://tailscale.com/)
 
 > [!CAUTION]
 > Do not use CasaOS for installing tailscale use terminal instead
@@ -223,7 +232,7 @@ tailscale ip -4
 ```
 
 >[!TIP]  
->If the device you added is a server or remotely-accessed device, you may want to consider [disabling key expiry](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
+>If the device you added is a server or remotely-accessed device, you may want to consider [`DISABLING KEY EXPIRY`](https://tailscale.com/kb/1028/key-expiry) to prevent the need to periodically re-authenticate.
 
 Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
@@ -239,6 +248,12 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 - Best alternative to google photos.
 - Easily back up, organize, and manage your photos on your own server.
 
+=> Open CasaOS Dashboard and install Immich through AppStore
+
+- Enter the below given address to access immich<br>
+  `http://localhost:2283`
+
+
 <img src="Screenshots/imch.png">
 
 <br>
@@ -250,9 +265,9 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 ### Step9: Post installation steps/ Further scope of advancement
 - AI Server: Can setup OpenWebUI with Ollama LLM models to have your own chatbot running on your own server.
 - Ebook Server: Using Calibre (Open Source alternative to kindle)
-- Automatic torrent Downloads using : Prowlrr Sonarr Radarr etc
+- Automatic torrent Downloads using Prowlrr Sonarr Radarr etc: <br>
   https://zerodya.net/self-host-jellyfin-media-streaming-stack/
-<img src="Screenshots/mediastack-1.png">
+<img src="Screenshots/trnt_rf.png">
 
 - Home automation : Using [NEXTCLOUD](https://nextcloud.com)
 
