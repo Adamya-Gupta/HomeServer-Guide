@@ -31,7 +31,7 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 ### Step2: DHCP IP Binding / Static IP
 > [!IMPORTANT]
-> This will ensure that your server always gets the same IP address which you assigned during installation , otherwise DHCP will automatically assign different IP everytime and you to reroute everything to a new IP address everytime.
+> This will ensure that your server always gets the same IP address which you assigned during installation , otherwise DHCP will automatically assign different IP everytime and you have to reroute everything to a new IP address everytime.
 
 > [!TIP]
 > Every router has little different admin settings so names can be like IP Reserve , Static IP , etc.  
@@ -48,19 +48,6 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
   ```Shell
   ifconfig
   ``` 
-<!-- <div align="center"><table><tr>To check your routers ip address enter this command in terminal</tr><tr><td>
-for Windows
-
-   ```Shell 
-   ipconfig 
-   ``` 
-   </td><td>
-for Linux
-
-  ```Shell
-  ifconfig
-  ``` 
-  </td></tr></table></div> -->
 
 <img src="Screenshots/IP_Bind.png">
 
@@ -235,18 +222,18 @@ https://jellyfin.org/docs/general/installation/linux/
 
 <br>
 
-- Commands for installing tailscale on Ubuntu Server:
+1. Commands for installing tailscale on Ubuntu Server:
 
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
-- Connect your server to your Tailscale network by typing:
+2. Connect your server to your Tailscale network by typing:
 
 ```shell
 sudo tailscale up
 ```
 
-- You can find your Tailscale IPv4 address by running
+3. You can find your Tailscale IPv4 address by running
   
 ```shell
 tailscale ip -4
@@ -287,11 +274,10 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
 ---
 
-### Step9: Post installation steps/ Further scope of advancement
+### Step9: Further scope of advancement
 - AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
 - Ebook Server: Using [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
-- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc: <br>
-  https://zerodya.net/self-host-jellyfin-media-streaming-stack/
+- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/)
 <img src="Screenshots/trnt_rf.png">
 
 - Home automation : Using [NEXTCLOUD](https://nextcloud.com)
