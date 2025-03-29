@@ -27,9 +27,9 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 > [!TIP]
 > Every router has little different admin settings so names can be like IP Reserve , Static IP , etc.  
-- Open your routers Setting 
-- by entering default gateway ip adderess in a browser 
-- to check your routers ip address enter this command in terminal 
+
+=> Open your routers Setting - By entering default gateway ip adderess in a web browser <br>
+=> To check your routers ip address enter this command in terminal 
 - for Windows 
   
    ```Shell 
@@ -56,11 +56,13 @@ for Linux
 
 <img src="Screenshots/IP_Bind.png">
 
+---
+
 ### Step3: Configuring SSH
 
 => A network protocol that allows users to securely access and manage remote computers.
 
-1. Install OpenSSH on Ubuntu Server by following command 
+1. Install OpenSSH on Ubuntu Server by following command in terminal
 
 ```Shell
 sudo apt install openssh-server
@@ -115,9 +117,10 @@ Eg:
   sudo apt upgrade
   ```
 
-
 Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
-  
+
+---
+
 ### Step4: Setting up CasaOS
 
 => Gives a good dashboard to manage your server.<br>
@@ -136,6 +139,8 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <div align="center"><table><tr>CasaOS</tr><tr><td>
 <img src="Screenshots/CasaL.png"/></td><td>
 <img src="Screenshots/CasaD.png"/></td></tr></table></div>
+
+---
 
 ### Step5: File Sharing through CasaOS
 - CasaOS made samba protocol very simple just one click 
@@ -167,6 +172,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 </tr>
 </table></div>
 
+---
 
 ### Step6: Media Server
 => Creating media server will give you freedom to stream your media on any device and anywhere.
@@ -191,8 +197,6 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 --- 
 
-=> CLI Method : Directly installing jellyfin on Ubuntu Server through terminal
-
 - Directories/Folders Structure example for jellyfin
   
 ```
@@ -206,6 +210,13 @@ Media
 ```
 <img src="Screenshots/Lin_JF.png">
 
+<br>
+
+- Alternative Method for installing Jellyfin <br>
+=> CLI Method : Directly installing jellyfin on Ubuntu Server through terminal
+https://jellyfin.org/docs/general/installation/linux/
+
+---
 
 ### Step7: Remotly accesing server from anywhere in the world 
 - One of the most simplest way to achieve this is by integrating [TAILSCALE](https://tailscale.com/)
@@ -245,6 +256,8 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 </tr>
 </table></div>
 
+---
+
 ### Step8: Setting up [Immich](https://immich.app/)
 - Best alternative to google photos.
 - Easily back up, organize, and manage your photos on your own server.
@@ -260,13 +273,15 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 <br>
 
 >[!TIP]
->Turn on STORAGE TEMPLATE ENGINE from settings, If you want your photos should be organised in proper folder instead of some random order of encryption.
+>Turn on `STORAGE TEMPLATE ENGINE` from settings, If you want your photos should be organised in proper folder instead of some random order of encryption.
 ><img src="Screenshots/strg_engn.png">
+
+---
 
 ### Step9: Post installation steps/ Further scope of advancement
 - AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
 - Ebook Server: Using [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
-- Automatic torrent Downloads using Prowlrr Sonarr Radarr etc: <br>
+- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc: <br>
   https://zerodya.net/self-host-jellyfin-media-streaming-stack/
 <img src="Screenshots/trnt_rf.png">
 
