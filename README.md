@@ -52,7 +52,7 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
   ifconfig
   ``` 
 
-<img src="Screenshots/IP_Bind.png">
+<img src="Screenshots/IP_Bind.png" width="800">
 
 ---
 
@@ -134,7 +134,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 
 <div align="center"><table><tr>CasaOS</tr><tr><td>
-<img src="Screenshots/CasaL.png"/></td><td>
+<img src="Screenshots/CasaL.png" width="1400"></td><td>
 <img src="Screenshots/CasaD.png"/></td></tr></table></div>
 
 ---
@@ -155,7 +155,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 <div align="center"><table>
 <tr>Accessing in Windows</tr>
 <tr>
-<td><img src="Screenshots/Access_D.png"></td>
+<td><img src="Screenshots/Access_D.png" width="900"></td>
 <td><img src="Screenshots/map_d.png"></td>
 </tr>
 </table></div>
@@ -189,8 +189,8 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 <div align="center"><table><tr>Jellyfin App on Android</tr>
 <tr><td>
-<img src="Screenshots/JF_Connect.jpeg"/></td><td>
-<img src="Screenshots/JF_MD.jpeg"></td></tr></table></div>
+<img src="Screenshots/JF_Connect.jpeg" width="500"></td><td>
+<img src="Screenshots/JF_MD.jpeg" width="500"></td></tr></table></div>
 
 
 --- 
@@ -249,7 +249,7 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 <div align="center"><table>
 <tr>Tailscail Dashboard</tr>
 <tr>
-<td><img alt="TailscaleD" src="Screenshots/TailscaleMD.jpeg"></td>
+<td><img alt="TailscaleD" src="Screenshots/TailscaleMD.jpeg" width ="350"></td>
 <td><img alt="TailscaleD" src="Screenshots/TailscaleD.png"></td>
 </tr>
 </table></div>
@@ -279,8 +279,9 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 ### Step9: Further Scope of Advancement
 - AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
 - Ebook Server: Can Use [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
-- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/)
-<img src="Screenshots/trnt_rf.png">
+- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/) 
+
+<img src="Screenshots/trnt_rf.png" width="800">
 
 - Home automation : Using [NEXTCLOUD](https://nextcloud.com)
 
@@ -291,6 +292,7 @@ By following this guide, you can successfully repurpose your old PC into a power
 If you found this guide useful, please ⭐ star this repository on GitHub to help others discover it! <br>
 Happy hosting!
 
+<img src="Screenshots/Conclusion.png" width="800">
 
 ---
 
