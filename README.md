@@ -2,6 +2,7 @@
 This is a guide for individuals who want to convert their old PC into a Home Server using free and open-source tools.
 
 ## Purpose of Creating This Repository
+
 - Setting up a home server can be overwhelming due to the vast amount of information available online. This guide aims to simplify the process by consolidating essential steps and resources in one place.
 
 - Finding the right resources and services that can be easily integrated and are truly useful took a lot of my time.
@@ -46,13 +47,13 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
    ```Shell 
    ipconfig 
    ``` 
-- for linux
+- for Linux
   
   ```Shell
   ifconfig
   ``` 
 
-<img src="Screenshots/IP_Bind.png" width="800">
+<img src="Screenshots/IP_Bind.png" width="700">
 
 ---
 
@@ -128,7 +129,7 @@ Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 ```
 curl -fsSL https://get.casaos.io | sudo bash
 ```
-Reference Github: https://github.com/IceWhaleTech/CasaOS
+Reference Github:[HERE](https://github.com/IceWhaleTech/CasaOS)
 
 => After Setup, enter the server's IP in any browser to access the CasaOS dashboard.
 
@@ -142,7 +143,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 ### Step5: File Sharing Through CasaOS
 - CasaOS simplifies Samba file sharing.
 1. Click the "Files" icon on CasaOS Dashboard.
-2. Then select the folder which you want to share and click "Share."
+2. Then select the folder which you want to share and click "Share".
 3. Copy the path and paste it in Windows File Explorer. 
 
 
@@ -153,7 +154,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 4. Check "Connect using different credentials".
 
 <div align="center"><table>
-<tr>Accessing in Windows</tr>
+<tr>Map Network Drive</tr>
 <tr>
 <td><img src="Screenshots/Access_D.png" width="900"></td>
 <td><img src="Screenshots/map_d.png"></td>
@@ -189,8 +190,8 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 <div align="center"><table><tr>Jellyfin App on Android</tr>
 <tr><td>
-<img src="Screenshots/JF_Connect.jpeg" width="500"></td><td>
-<img src="Screenshots/JF_MD.jpeg" width="500"></td></tr></table></div>
+<img src="Screenshots/JF_Connect.jpeg" width="400"></td><td>
+<img src="Screenshots/JF_MD.jpeg" width="400"></td></tr></table></div>
 
 
 --- 
