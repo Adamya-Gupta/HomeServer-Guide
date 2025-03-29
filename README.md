@@ -12,6 +12,10 @@ This is a guide for those individuls who want to convert their old PC into a Hom
 2. Pendrive >= 16GB
 3. Wifi Router with Internet connection
 
+## Overview
+Basically what we are going to setup:
+<img src="Screenshots/Diagram.png">
+
 ## Setup 
 ### Step1: Setting up UBUNTU SERVER OS
 1. Download Ubuntu server ISO (LTS version)  from:
@@ -223,7 +227,7 @@ https://jellyfin.org/docs/general/installation/linux/
 
 ---
 
-### Step7: Remotly accesing server from anywhere in the world 
+### Step7: Remotly accessing server from anywhere in the world 
 - One of the most simplest way to achieve this is by integrating [TAILSCALE](https://tailscale.com/)
 
 > [!CAUTION]
