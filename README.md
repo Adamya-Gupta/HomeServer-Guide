@@ -99,7 +99,7 @@ hostname -I
 ```
 --- 
 
-=> To remotely access the terminal from a client device, enter:
+=> To remotely access the terminal from a client device, enter following commands in the terminal of Client PC:
 
 ```sudo ssh username@device_ipaddress``` <br>
 
@@ -122,7 +122,7 @@ Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 
 ### Step4: Setting up CasaOS
 
-=> CasaOS provides a user-friendly dashboard to manage your server and supports apps in the form of Docker containers.
+=> [CasaOS](https://casaos.zimaspace.com/) provides a user-friendly dashboard to manage your server and supports apps in the form of Docker containers.
 
 - Install CasaOS with the following command:
 
@@ -190,8 +190,8 @@ Reference Github:[HERE](https://github.com/IceWhaleTech/CasaOS)
 
 <div align="center"><table><tr>Jellyfin App on Android</tr>
 <tr><td>
-<img src="Screenshots/JF_Connect.jpeg" width="400"></td><td>
-<img src="Screenshots/JF_MD.jpeg" width="400"></td></tr></table></div>
+<img src="Screenshots/JF_Connect.jpeg" width="350"></td><td>
+<img src="Screenshots/JF_MD.jpeg" width="350"></td></tr></table></div>
 
 
 --- 
@@ -218,7 +218,7 @@ https://jellyfin.org/docs/general/installation/linux/
 ---
 
 ### Step7: Remotly accessing server from anywhere in the world 
-- One of the most simplest way to achieve this is by integrating [TAILSCALE](https://tailscale.com/)
+- One of the most simplest way to achieve this is by integrating [Tailscale](https://tailscale.com/)
 
 > [!CAUTION]
 > Do not use CasaOS for installing tailscale use terminal instead
@@ -296,26 +296,3 @@ Happy hosting!
 <img src="Screenshots/Conclusion.png" width="800">
 
 ---
-
- <kbd>Ctrl</kbd>
-
-<a id="installation"></a>
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
----
-[Arch Linux](https://wiki.archlinux.org/title/Arch_Linux)
-
-
-> [!IMPORTANT]
-> The install script will auto-detect an NVIDIA card and install nvidia-dkms drivers for your kernel.
-> Please ensure that your NVIDIA card supports dkms drivers in the list provided [here](https://wiki.archlinux.org/title/NVIDIA).
-
-> [!CAUTION]
-> The script modifies your `grub` or `systemd-boot` config to enable NVIDIA DRM.
-
-
-```shell
-cd ~/HyDE/Scripts
-git pull origin master
-./install.sh -r
-```
-<!-- comment -->
