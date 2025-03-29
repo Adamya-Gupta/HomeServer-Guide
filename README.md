@@ -1,43 +1,46 @@
 # HomeServer-Guide
-This is a guide for those individuls who want to convert their old PC into a HomeServer using free and open source tools.
+This is a guide for individuals who want to convert their old PC into a Home Server using free and open-source tools.
 
-## Purpose for creating this repository
-- It took a lot of my time finding the right resources and services which can be integrated easily and are really useful.
+## Purpose of Creating This Repository
+- Setting up a home server can be overwhelming due to the vast amount of information available online. This guide aims to simplify the process by consolidating essential steps and resources in one place.
+
+- Finding the right resources and services that can be easily integrated and are truly useful took a lot of my time.
   
-- I want to help people save time and give them a step by step guide.
+- I want to help people save time by providing a step-by-step guide.
 
 
 ## Requirements
-1. Old PC or any pc you want to convert into a server
-2. Pendrive >= 16GB
-3. Wifi Router with Internet connection
+1. An old PC or any PC you want to convert into a server.
+2. A USB drive (≥ 16GB).
+3. A Wi-Fi router with an internet connection.
 
 ## Overview
-Basically what we are going to setup:
+This is what we are going to set up:
+
 <img src="Screenshots/Diagram.png">
 
 ## Setup 
 ### Step1: Setting up UBUNTU SERVER OS
-1. Download Ubuntu server ISO (LTS version)  from:
+1. Download Ubuntu server ISO (LTS version) from:
    https://ubuntu.com/download/server
 2. Make bootable pendrive using [Rufus](https://rufus.ie/en/)
 3. Boot your server(Old PC) from the pendrive and start setting up the ubuntu server on your system.
 
 >[!IMPORTANT]
->Make sure to check install openssh server while installing Ubuntu Server OS
+>Ensure you select "Install OpenSSH Server" while installing Ubuntu Server OS.
 ><img src="Screenshots/ssh.png">  
 
 Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
-### Step2: DHCP IP Binding / Static IP
+### Step2: DHCP IP Binding/Static IP
 > [!IMPORTANT]
-> This will ensure that your server always gets the same IP address which you assigned during installation , otherwise DHCP will automatically assign different IP everytime and you have to reroute everything to a new IP address everytime.
+> This ensures your server always receives the same IP address assigned during installation. Otherwise, DHCP will automatically assign a different IP each time, requiring you to reconfigure settings.
 
 > [!TIP]
-> Every router has little different admin settings so names can be like IP Reserve , Static IP , etc.  
+> Router settings may vary. Look for options like "IP Reserve" or "Static IP."
 
-=> Open your routers Setting - By entering default gateway ip adderess in a web browser <br>
-=> To check your routers ip address enter this command in terminal 
+=> Open your router's settings by entering the default gateway IP address in a web browser. <br>
+=> To find your router's IP address, enter the following command in the terminal:
 - for Windows 
   
    ```Shell 
@@ -57,7 +60,7 @@ Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 => A network protocol that allows users to securely access and manage remote computers.
 
-1. Install OpenSSH on Ubuntu Server by following command in terminal
+1. Install OpenSSH on Ubuntu Server using the following command in terminal
 
 ```Shell
 sudo apt install openssh-server
@@ -68,41 +71,41 @@ sudo apt install openssh-server
 sudo systemctl status sshd
 ```
 >[!TIP]
->If above command doesn't work try:
+>If above command doesn't work,try:
 >```Shell
 >sudo systemctl status ssh
 >```
 
-3. Start ssh service
+3. Start ssh service:
  
 ```Shell
 sudo systemctl start sshd
 ```
-4. Make sure to start this service at boot automatically
+4. Enable SSH to start automatically at boot:
 
 ```Shell
 sudo systemctl enable sshd
 ```  
-4. Check username of ubuntu server
+4. Check username of ubuntu server:
 
 ```Shell
 whoami
 ```
-5. Check server IP by following command 
+5. Check the server’s IP address:
 
 ```Shell
 hostname -I
 ```
 --- 
 
-=> Now Remotely Access Terminal from client device by entering 
+=> To remotely access the terminal from a client device, enter:
 
 ```sudo ssh username@device_ipaddress``` <br>
 
 Eg:
 `sudo ssh adserver@192.168.1.9`
 
-- Then update and upgrade the system by followinf commands:
+- Then update and upgrade the system :
   
   ```Shell
   sudo apt update
@@ -118,17 +121,16 @@ Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 
 ### Step4: Setting up CasaOS
 
-=> Gives a good dashboard to manage your server.<br>
-=> Provides apps in form of docker container. 
+=> CasaOS provides a user-friendly dashboard to manage your server and supports apps in the form of Docker containers.
 
-- Setup CasaOS by simply typing this command:
+- Install CasaOS with the following command:
 
 ```
 curl -fsSL https://get.casaos.io | sudo bash
 ```
 Reference Github: https://github.com/IceWhaleTech/CasaOS
 
-=> After Setup , Enter the server IP in any browser to access the CasaOS dashboard
+=> After Setup, enter the server's IP in any browser to access the CasaOS dashboard.
 
 
 <div align="center"><table><tr>CasaOS</tr><tr><td>
@@ -137,18 +139,18 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 ---
 
-### Step5: File Sharing through CasaOS
-- CasaOS made samba protocol very simple just one click 
-1. Click the files icon on CasaOS Dashboard
-2. Then select the folder which you want to share and click share
-3. Copy the path and paste it in windows file explorer 
+### Step5: File Sharing Through CasaOS
+- CasaOS simplifies Samba file sharing.
+1. Click the "Files" icon on CasaOS Dashboard.
+2. Then select the folder which you want to share and click "Share."
+3. Copy the path and paste it in Windows File Explorer. 
 
 
 <div align="center"><table><tr>CasaOS Files</tr><tr><td>
 <img src="Screenshots/CasaShare.png"/></td><td>
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
 
-4. Check connect using different credentials
+4. Check "Connect using different credentials".
 
 <div align="center"><table>
 <tr>Accessing in Windows</tr>
@@ -161,7 +163,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 5. Then enter the same credentials which you set while configuring ubuntu server OS
 
 <div align="center"><table>
-<tr>Accessing in windows</tr>
+<tr>Accessing in Windows</tr>
 <tr>
 <td><img src="Screenshots/cred_PD.png"></td> 
 <td><img src="Screenshots/Store_Access.png"></td> 
@@ -170,7 +172,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 ---
 
-### Step6: Media Server
+### Step6: Setting Up a Media Server
 => Creating media server will give you freedom to stream your media on any device and anywhere.
 
 => We will integrate [Jellyfin](https://jellyfin.org/) 
@@ -178,7 +180,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 
 => Open CasaOS Dashboard and install jellyfin through AppStore
 
-- Enter the below given address to access jellyfin server <br>
+=> Enter the below given address in any browser to access jellyfin server <br>
   `http://localhost:8096`
 
 <div align="center">Jellyfin on web browser</div>
@@ -227,13 +229,13 @@ https://jellyfin.org/docs/general/installation/linux/
 ```shell
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
-2. Connect your server to your Tailscale network by typing:
+2. Connect your server to your Tailscale network:
 
 ```shell
 sudo tailscale up
 ```
 
-3. You can find your Tailscale IPv4 address by running
+3. Find your Tailscale IPv4 address:
   
 ```shell
 tailscale ip -4
@@ -254,13 +256,13 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
 ---
 
-### Step8: Setting up [Immich](https://immich.app/)
-- Best alternative to google photos.
+### Step8: Setting up Immich
+- [Immich](https://immich.app/) is a great alternative to Google Photos.
 - Easily back up, organize, and manage your photos on your own server.
 
 => Open CasaOS Dashboard and install Immich through AppStore
 
-- Enter the below given address to access immich<br>
+- Enter the below given address in any browser to access Immich<br>
   `http://localhost:2283`
 
 <div align="center">Immich Dashboard</div>
@@ -274,13 +276,20 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
 ---
 
-### Step9: Further scope of advancement
+### Step9: Further Scope of Advancement
 - AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
-- Ebook Server: Using [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
+- Ebook Server: Can Use [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to kindle)
 - Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/)
 <img src="Screenshots/trnt_rf.png">
 
 - Home automation : Using [NEXTCLOUD](https://nextcloud.com)
+
+## Conclusion
+
+By following this guide, you can successfully repurpose your old PC into a powerful and efficient home server. With services like CasaOS, Jellyfin, and Immich, you can easily manage files, stream media, and back up your data. Remote access through Tailscale ensures your server is accessible from anywhere, making it a versatile addition to your home network. Explore further advancements to expand your server’s functionality. <br>
+
+If you found this guide useful, please ⭐ star this repository on GitHub to help others discover it! <br>
+Happy hosting!
 
 
 ---
