@@ -17,7 +17,11 @@ This is a guide for those individuls who want to convert their old PC into a Hom
 1. Download Ubuntu server ISO (LTS version)  from:
    https://ubuntu.com/download/server
 2. Make bootable pendrive using [Rufus](https://rufus.ie/en/)
-3. Boot your server(Old PC) from the pendrive and start setting up the ubuntu server on your system  
+3. Boot your server(Old PC) from the pendrive and start setting up the ubuntu server on your system.
+
+>[!IMPORTANT]
+>Make sure to check install openssh server while installing Ubuntu Server OS
+><img src="Screenshots/ssh.png">  
 
 Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
@@ -147,13 +151,13 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 1. Click the files icon on CasaOS Dashboard
 2. Then select the folder which you want to share and click share
 3. Copy the path and paste it in windows file explorer 
-4. Check connect using different credentials
-5. Then enter the same credentials which you set while configuring ubuntu server OS
+
 
 <div align="center"><table><tr>CasaOS Files</tr><tr><td>
 <img src="Screenshots/CasaShare.png"/></td><td>
 <img src="Screenshots/SharePath.png"></td></tr></table></div>
 
+4. Check connect using different credentials
 
 <div align="center"><table>
 <tr>Accessing in Windows</tr>
@@ -163,6 +167,7 @@ Reference Github: https://github.com/IceWhaleTech/CasaOS
 </tr>
 </table></div>
 
+5. Then enter the same credentials which you set while configuring ubuntu server OS
 
 <div align="center"><table>
 <tr>Accessing in windows</tr>
@@ -267,7 +272,7 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 - Enter the below given address to access immich<br>
   `http://localhost:2283`
 
-
+<div align="center">Immich Dashboard</div>
 <img src="Screenshots/imch.png">
 
 <br>
