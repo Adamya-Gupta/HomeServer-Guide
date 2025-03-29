@@ -87,12 +87,12 @@ sudo systemctl start sshd
 ```Shell
 sudo systemctl enable sshd
 ```  
-4. Check username of ubuntu server:
+5. Check username of ubuntu server:
 
 ```Shell
 whoami
 ```
-5. Check the server’s IP address:
+6. Check the server’s IP address:
 
 ```Shell
 hostname -I
