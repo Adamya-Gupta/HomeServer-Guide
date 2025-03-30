@@ -288,10 +288,18 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
 ## Conclusion
 
-By following this guide, you can successfully repurpose your old PC into a powerful and efficient home server. With services like CasaOS, Jellyfin, and Immich, you can easily manage files, stream media, and back up your data. Remote access through Tailscale ensures your server is accessible from anywhere, making it a versatile addition to your home network. Explore further advancements to expand your server’s functionality. <br>
+By following this guide, you can successfully repurpose your old PC into a powerful and efficient home server.
+If you run into issues, don’t get discouraged — troubleshoot, read articles on Reddit, Quora, and tech blogs, watch videos, and search for solutions. If one method doesn’t work, try another — there’s always a way forward!
+Keep refining, improving, and customizing your server to fit your needs. In the end, you’ll have a powerful, self-hosted system that puts you in control of your data and digital life.
+
+ <br>
+
+💡If you think something is missing from this guide or have suggestions for improvement, please open an issue or contribute! Your feedback helps make this resource even better for everyone.
+
+ <br>
 
 If you found this guide useful, please ⭐ star this repository on GitHub to help others discover it! <br>
-Happy hosting!
+Happy hosting!😊
 
 <img src="Screenshots/Conclusion.png" width="800">
 
