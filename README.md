@@ -278,7 +278,7 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 ---
 
 ### Step9: Further Scope of Advancement
-- AI Server: Can setup `OpenWebUI` with `Ollama` LLM models to have your own chatbot running on your own server.
+- AI Server: Can setup [`OpenWebUI`](https://www.openwebui.com/) with [`Ollama`](https://github.com/ollama/ollama) LLM models to have your own chatbot running on your own server.
 - Ebook Server: Can Use [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to Kindle)
 - Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/) 
 
@@ -292,7 +292,9 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 By following this guide, you can successfully repurpose your old PC into a powerful and efficient home server.
 If you run into issues, don’t get discouraged — troubleshoot, read articles on Reddit, Quora, and tech blogs, watch videos, and search for solutions. If one method doesn’t work, try another — there’s always a way forward!
 Keep refining, improving, and customizing your server to fit your needs. In the end, you’ll have a powerful, self-hosted system that puts you in control of your data and digital life.  <br>
+
 💡If you think something is missing from this guide or have suggestions for improvement, please open an issue or contribute! Your feedback helps make this resource even better for everyone. <br>
+
 If you found this guide useful, please ⭐ star this repository on GitHub to help others discover it! <br>
 Happy hosting!😊
 
