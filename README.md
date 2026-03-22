@@ -9,6 +9,10 @@ This is a guide for individuals who want to convert their old PC into a Home Ser
   
 - I want to help people save time by providing a step-by-step guide.
 
+## Fast Track: Automated Setup
+If you prefer not to configure everything manually,
+
+👉 **Check out the ⚡ [HomeServer Automation Script](https://github.com/Adamya-Gupta/HomeServer-Script) ⚡ that automatically deploys and configures Docker, CasaOS, Jellyfin, Tailscale, Immich, and more with just a few commands and build your server in minutes!**
 
 ## Requirements
 1. An old PC or any PC you want to convert into a server.
@@ -31,7 +35,7 @@ This is what we are going to set up:
 >Ensure you select "Install OpenSSH Server" while installing Ubuntu Server OS.
 ><img src="Screenshots/ssh.png">  
 
-Reference Video [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
+Reference Video: [HERE](https://youtu.be/0-T7af_lRF8?feature=shared)
 
 ### Step2: DHCP IP Binding/Static IP
 > [!IMPORTANT]
@@ -116,7 +120,7 @@ Eg:
   sudo apt upgrade
   ```
 
-Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
+Reference Video: [HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 
 ---
 
@@ -129,7 +133,7 @@ Reference Video :[HERE](https://youtu.be/3FKsdbjzBcc?feature=shared)
 ```
 curl -fsSL https://get.casaos.io | sudo bash
 ```
-Reference Github:[HERE](https://github.com/IceWhaleTech/CasaOS)
+Reference Github: [HERE](https://github.com/IceWhaleTech/CasaOS)
 
 => After Setup, enter the server's IP in any browser to access the CasaOS dashboard.
 
@@ -173,7 +177,7 @@ Reference Github:[HERE](https://github.com/IceWhaleTech/CasaOS)
 
 ---
 
-### Step6: Setting Up a Media Server
+### Step6: Setting up a Media Server
 => Creating media server will give you freedom to stream your media on any device and anywhere.
 
 => We will integrate [Jellyfin](https://jellyfin.org/) 
@@ -184,7 +188,7 @@ Reference Github:[HERE](https://github.com/IceWhaleTech/CasaOS)
 => Enter the below given address in any browser to access jellyfin server <br>
   `http://localhost:8096`
 
-<div align="center">Jellyfin on web browser</div>
+<div align="center">Jellyfin on Web browser</div>
 <img src="Screenshots/JF_D.png">
 
 
@@ -212,7 +216,7 @@ Media
 <br>
 
 - Alternative Method for installing Jellyfin <br>
-=> CLI Method : Directly installing jellyfin on Ubuntu Server through terminal
+=> CLI Method: Directly installing jellyfin on Ubuntu Server through terminal
 https://jellyfin.org/docs/general/installation/linux/
 
 ---
@@ -248,7 +252,7 @@ tailscale ip -4
 Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 
 <div align="center"><table>
-<tr>Tailscail Dashboard</tr>
+<tr>Tailscale Dashboard</tr>
 <tr>
 <td><img alt="TailscaleD" src="Screenshots/TailscaleMD.jpeg" width ="350"></td>
 <td><img alt="TailscaleD" src="Screenshots/TailscaleD.png"></td>
@@ -278,14 +282,19 @@ Reference Video: [HERE](https://youtu.be/sPdvyR7bLqI)
 ---
 
 ### Step9: Further Scope of Advancement
-- AI Server: Can setup [`OpenWebUI`](https://www.openwebui.com/) with [`Ollama`](https://github.com/ollama/ollama) LLM models to have your own chatbot running on your own server.
+- AI Server: Can setup [OpenWebUI](https://www.openwebui.com/) with [Ollama](https://github.com/ollama/ollama) LLM models to have your own chatbot running on your own server.
 - Ebook Server: Can Use [Calibre-Web](https://github.com/janeczku/calibre-web) (Open Source alternative to Kindle)
-- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc:[Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/) 
+- Automatic torrent Downloads using Prowlarr, Sonarr, Radarr etc: [Reference](https://zerodya.net/self-host-jellyfin-media-streaming-stack/) 
 
 <img src="Screenshots/trnt_rf.png" width="800">
 
-- File hosting services: Using [NEXTCLOUD](https://nextcloud.com) (Alternative to Dropbox,Google Drive,etc)
-- Home automation : Using [Home Assistant](https://www.home-assistant.io/)
+- File hosting services: Using [NEXTCLOUD](https://nextcloud.com) (Alternative to Dropbox, Google Drive, etc.)
+- Home automation: Using [Home Assistant](https://www.home-assistant.io/)
+
+--- 
+
+>[!IMPORTANT]
+>If you ever need to reinstall your server or set up a new one in the future, save yourself some time by using ⚡ [HomeServer Automation Script](https://github.com/Adamya-Gupta/HomeServer-Script). It performs all the steps in this guide automatically!
 
 ## Conclusion
 
